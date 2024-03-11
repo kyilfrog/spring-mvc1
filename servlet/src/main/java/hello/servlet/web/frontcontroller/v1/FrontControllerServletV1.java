@@ -16,6 +16,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet(name = "frontControllerServletV1", urlPatterns = "/front-controller/v1/*")
 public class FrontControllerServletV1 extends HttpServlet {
 	
+	// "요청 URI(String)를 키로, 해당 URI에 대응하는 컨트롤러(ControllerV1)를 값으로 갖는 HashMap을 생성하여 controllerMap 변수에 할당한다"는 의미
 	private Map<String, ControllerV1> controllerMap = new HashMap<>();
 	
 	public FrontControllerServletV1() {
